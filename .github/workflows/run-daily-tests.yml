@@ -9,6 +9,9 @@ on:
   # 2. Allow manual runs from the "Actions" tab in GitHub
   workflow_dispatch:
 
+permissions:
+  contents: write
+  
 jobs:
   test-and-report:
     runs-on: ubuntu-latest
@@ -29,7 +32,7 @@ jobs:
         # This is the main job. It will build Docker images,
         # run all tests, and generate 'report.md'.
         # This will take a while.
-        run: python3 ./triage.py
+        run: python3 -u ./triage.py
 
       - name: 5. Commit Report
         # This step automatically commits the new 'report.md' 
