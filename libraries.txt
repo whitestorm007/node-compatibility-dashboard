@@ -1,5 +1,10 @@
 # libraries.txt
 # A list of git URLs for the libraries we want to test.
+
+# -----------------------------------------------------
+# Section 1: Standard, Compatible Libraries
+# These should all pass and end up in "✅ Compatible"
+# -----------------------------------------------------
 https://github.com/fastify/fastify.git
 https://github.com/expressjs/express.git
 https://github.com/jestjs/jest.git
@@ -10,3 +15,22 @@ https://github.com/moment/moment.git
 https://github.com/dayjs/dayjs.git
 https://github.com/chalk/chalk.git
 https://github.com/tj/commander.js.git
+
+# -----------------------------------------------------
+# Section 2: Failure-Prone Libraries (C++ Addons)
+# These will likely fail on 'node-current' and
+# end up in "🚨 Regressions"
+# -----------------------------------------------------
+https://github.com/kelektiv/node.bcrypt.js.git
+https://github.com/TryGhost/node-sqlite3.git
+https://github.com/Automattic/node-canvas.git
+https://github.com/sass/node-sass.git
+https://github.com/zeromq/zeromq.js.git
+
+# -----------------------------------------------------
+# Section 3: Untestable Library
+# This library (the original 'npx') has no "test"
+# script in its package.json.
+# It should end up in "🤷 Untestable"
+# -----------------------------------------------------
+https://github.com/zkat/npx.git
