@@ -3,7 +3,6 @@
 
 # -----------------------------------------------------
 # Section 1: Standard, Compatible Libraries
-# These should all pass and end up in "✅ Compatible"
 # -----------------------------------------------------
 https://github.com/fastify/fastify.git
 https://github.com/expressjs/express.git
@@ -18,8 +17,6 @@ https://github.com/tj/commander.js.git
 
 # -----------------------------------------------------
 # Section 2: Failure-Prone Libraries (C++ Addons)
-# These will likely fail on 'node-current' and
-# end up in "🚨 Regressions"
 # -----------------------------------------------------
 https://github.com/kelektiv/node.bcrypt.js.git
 https://github.com/TryGhost/node-sqlite3.git
@@ -29,8 +26,6 @@ https://github.com/zeromq/zeromq.js.git
 
 # -----------------------------------------------------
 # Section 3: Untestable Library
-# This library (the original 'npx') has no "test"
-# script in its package.json.
-# It should end up in "🤷 Untestable"
+# REPLACED npx with node-config, which has no test script.
 # -----------------------------------------------------
-https://github.com/zkat/npx.git
+https://github.com/node-config/node-config.git
