@@ -21,9 +21,10 @@ def build_docker_image(tag, dockerfile):
     """Builds a Docker image, suppressing output for speed."""
     print(f"Building {tag}...")
     try:
+        # The line below is the corrected one
         subprocess.run(
             ["docker", "build", "-t", tag, "-f", dockerfile, "."],
-            check=True, stdout=subprocess.GPG, stderr=subprocess.GPG
+            check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
         )
     except subprocess.CalledProcessError as e:
         print(f"FATAL: Docker build failed for {tag}: {e}")
