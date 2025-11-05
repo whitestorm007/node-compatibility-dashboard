@@ -1,6 +1,6 @@
 # Node.js Nightly Compatibility Report
 
-**Last Run:** 2025-11-05T09:09:07.665521 UTC
+**Last Run:** 2025-11-05T09:29:48.356421 UTC
 
 **Summary:** 15 / 15 testable libraries (100.00%) are compatible.
 
@@ -29,10 +29,11 @@ Libraries that passed on both Stable and Nightly.
 | node-canvas | ✅ Pass |
 | node-sass | ✅ Pass |
 | zeromq.js | ✅ Pass |
-| npx | ✅ Pass |
+| node-config | ✅ Pass |
 
-## 🤷 Untestable (0)
+## 🤷 Untestable (1)
 Libraries that do not have a `scripts.test` in `package.json`.
 
 | Library | Status |
 | --- | --- |
+| dayjs | 🤷 Untestable |
