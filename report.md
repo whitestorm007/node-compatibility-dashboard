@@ -1,8 +1,8 @@
 # Node.js Nightly Compatibility Report
 
-**Last Run:** 2025-11-05T07:44:59.193664 UTC
+**Last Run:** 2025-11-05T09:09:07.665521 UTC
 
-**Summary:** 9 / 9 testable libraries (100.00%) are compatible.
+**Summary:** 15 / 15 testable libraries (100.00%) are compatible.
 
 ## 🚨 Regressions (0)
 Libraries that **passed** on Node.js Stable but **failed** on Nightly.
@@ -10,7 +10,7 @@ Libraries that **passed** on Node.js Stable but **failed** on Nightly.
 ## ⚠️ Already Broken (0)
 Libraries that **failed** on Node.js Stable. These failures are not related to Nightly.
 
-## ✅ Compatible (9)
+## ✅ Compatible (15)
 Libraries that passed on both Stable and Nightly.
 
 | Library | Status |
@@ -24,6 +24,12 @@ Libraries that passed on both Stable and Nightly.
 | moment | ✅ Pass |
 | chalk | ✅ Pass |
 | commander.js | ✅ Pass |
+| node.bcrypt.js | ✅ Pass |
+| node-sqlite3 | ✅ Pass |
+| node-canvas | ✅ Pass |
+| node-sass | ✅ Pass |
+| zeromq.js | ✅ Pass |
+| npx | ✅ Pass |
 
 ## 🤷 Untestable (0)
 Libraries that do not have a `scripts.test` in `package.json`.
