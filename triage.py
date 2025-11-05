@@ -18,16 +18,21 @@ from datetime import datetime
 # --- Helper Functions ---
 
 def build_docker_image(tag, dockerfile):
-    """Builds a Docker image, suppressing output for speed."""
+    """Builds a Docker image and shows output on failure."""
     print(f"Building {tag}...")
     try:
-        # The line below is the corrected one
+        # We've removed stdout/stderr suppression
+        # We now capture stderr to print it on failure
         subprocess.run(
             ["docker", "build", "-t", tag, "-f", dockerfile, "."],
-            check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
+            check=True, capture_output=True, text=True
         )
     except subprocess.CalledProcessError as e:
-        print(f"FATAL: Docker build failed for {tag}: {e}")
+        # This will now print the FULL error from Docker!
+        print(f"FATAL: Docker build failed for {tag}\n")
+        print("--- DOCKER ERROR ---")
+        print(e.stderr)
+        print("----------------------")
         exit(1)
 
 def run_test_harness(url, lib_name):
