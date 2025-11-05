@@ -1,0 +1,47 @@
+# .github/workflows/run-daily-tests.yml
+name: Run Daily Compatibility Tests
+
+on:
+  # 1. Run on a schedule (01:00 UTC every day)
+  schedule:
+    - cron: '0 1 * * *'
+  
+  # 2. Allow manual runs from the "Actions" tab in GitHub
+  workflow_dispatch:
+
+jobs:
+  test-and-report:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 1. Checkout Your Code
+        uses: actions/checkout@v4
+
+      - name: 2. Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 3. Make Harness Executable
+        run: chmod +x ./test-harness.sh
+
+      - name: 4. Run Triage Script
+        # This is the main job. It will build Docker images,
+        # run all tests, and generate 'report.md'.
+        # This will take a while.
+        run: python3 ./triage.py
+
+      - name: 5. Commit Report
+        # This step automatically commits the new 'report.md' 
+        # back to your repository.
+        run: |
+          git config --global user.name 'Compatibility Bot'
+          git config --global user.email 'bot@github-actions.com'
+          git add report.md
+          # Check if there are changes to commit
+          if ! git diff --staged --quiet; then
+            git commit -m "Update compatibility report"
+            git push
+          else
+            echo "No changes to commit."
+          fi

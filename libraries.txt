@@ -1,0 +1,12 @@
+# libraries.txt
+# A list of git URLs for the libraries we want to test.
+https://github.com/fastify/fastify.git
+https://github.com/expressjs/express.git
+https://github.com/jestjs/jest.git
+https://github.com/redis/node-redis.git
+https://github.com/brianc/node-postgres.git
+https://github.com/axios/axios.git
+https://github.com/moment/moment.git
+https://github.com/dayjs/dayjs.git
+https://github.com/chalk/chalk.git
+https://github.com/tj/commander.js.git
