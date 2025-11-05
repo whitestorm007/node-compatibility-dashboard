@@ -1,1 +1,1 @@
-FROM node:nightly
+FROM node:current-alpine
