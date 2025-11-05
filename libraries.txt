@@ -29,3 +29,16 @@ https://github.com/zeromq/zeromq.js.git
 # REPLACED npx with node-config, which has no test script.
 # -----------------------------------------------------
 https://github.com/node-config/node-config.git
+
+
+https://github.com/google-gemini/deprecated-generative-ai-js
+https://github.com/3846masa/axios-cookiejar-support
+https://github.com/cheeriojs/cheerio
+https://github.com/date-fns/date-fns
+https://github.com/motdotla/dotenv
+https://github.com/apify/fingerprint-suite
+https://github.com/Automattic/mongoose
+https://github.com/node-cron/node-cron
+https://github.com/cscott/node-random-name
+https://github.com/salesforce/tough-cookie
+https://github.com/defunctzombie/node-url
