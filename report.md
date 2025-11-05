@@ -1,8 +1,8 @@
 # Node.js Nightly Compatibility Report
 
-**Last Run:** 2025-11-05T09:29:48.356421 UTC
+**Last Run:** 2025-11-05T10:39:21.419938 UTC
 
-**Summary:** 15 / 15 testable libraries (100.00%) are compatible.
+**Summary:** 26 / 26 testable libraries (100.00%) are compatible.
 
 ## 🚨 Regressions (0)
 Libraries that **passed** on Node.js Stable but **failed** on Nightly.
@@ -10,7 +10,7 @@ Libraries that **passed** on Node.js Stable but **failed** on Nightly.
 ## ⚠️ Already Broken (0)
 Libraries that **failed** on Node.js Stable. These failures are not related to Nightly.
 
-## ✅ Compatible (15)
+## ✅ Compatible (26)
 Libraries that passed on both Stable and Nightly.
 
 | Library | Status |
@@ -30,6 +30,17 @@ Libraries that passed on both Stable and Nightly.
 | node-sass | ✅ Pass |
 | zeromq.js | ✅ Pass |
 | node-config | ✅ Pass |
+| deprecated-generative-ai-js | ✅ Pass |
+| axios-cookiejar-support | ✅ Pass |
+| cheerio | ✅ Pass |
+| date-fns | ✅ Pass |
+| dotenv | ✅ Pass |
+| fingerprint-suite | ✅ Pass |
+| mongoose | ✅ Pass |
+| node-cron | ✅ Pass |
+| node-random-name | ✅ Pass |
+| tough-cookie | ✅ Pass |
+| node-url | ✅ Pass |
 
 ## 🤷 Untestable (1)
 Libraries that do not have a `scripts.test` in `package.json`.
