@@ -58,6 +58,6 @@ echo "{\"lib\": \"$LIB_NAME\", \"status\": \"TESTED\", \"stable_pass\": $STABLE_
 
 # --- Cleanup ---
 cd ..
-rm -rf "$LIB_NAME"
+sudo rm -rf "$LIB_NAME"
 rm $STABLE_LOG_FILE $NIGHTLY_LOG_FILE
 exit 0
