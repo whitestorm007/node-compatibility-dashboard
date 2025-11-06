@@ -1,44 +1,149 @@
-# libraries.txt
-# A list of git URLs for the libraries we want to test.
+# The Test 100 - Critical and Diverse Node.js Libraries
+# Format: git_url
 
-# -----------------------------------------------------
-# Section 1: Standard, Compatible Libraries
-# -----------------------------------------------------
-https://github.com/fastify/fastify.git
-https://github.com/expressjs/express.git
-https://github.com/jestjs/jest.git
-https://github.com/redis/node-redis.git
-https://github.com/brianc/node-postgres.git
-https://github.com/axios/axios.git
-https://github.com/moment/moment.git
-https://github.com/dayjs/dayjs.git
-https://github.com/chalk/chalk.git
-https://github.com/tj/commander.js.git
+# Web Frameworks
+https://github.com/fastify/fastify
+https://github.com/expressjs/express
+https://github.com/koajs/koa
+https://github.com/hapijs/hapi
+https://github.com/nestjs/nest
 
-# -----------------------------------------------------
-# Section 2: Failure-Prone Libraries (C++ Addons)
-# -----------------------------------------------------
-https://github.com/kelektiv/node.bcrypt.js.git
-https://github.com/TryGhost/node-sqlite3.git
-https://github.com/Automattic/node-canvas.git
-https://github.com/sass/node-sass.git
-https://github.com/zeromq/zeromq.js.git
+# Testing Frameworks
+https://github.com/jestjs/jest
+https://github.com/mochajs/mocha
+https://github.com/avajs/ava
+https://github.com/vitest-dev/vitest
+https://github.com/jasmine/jasmine
 
-# -----------------------------------------------------
-# Section 3: Untestable Library
-# REPLACED npx with node-config, which has no test script.
-# -----------------------------------------------------
-https://github.com/node-config/node-config.git
+# Utilities
+https://github.com/lodash/lodash
+https://github.com/sindresorhus/got
+https://github.com/axios/axios
+https://github.com/node-fetch/node-fetch
+https://github.com/debug-js/debug
 
+# Database Drivers
+https://github.com/brianc/node-postgres
+https://github.com/mysqljs/mysql
+https://github.com/mongodb/node-mongodb-native
+https://github.com/redis/node-redis
+https://github.com/sequelize/sequelize
 
-https://github.com/google-gemini/deprecated-generative-ai-js
-https://github.com/3846masa/axios-cookiejar-support
-https://github.com/cheeriojs/cheerio
+# Build Tools
+https://github.com/webpack/webpack
+https://github.com/rollup/rollup
+https://github.com/evanw/esbuild
+https://github.com/vitejs/vite
+https://github.com/parcel-bundler/parcel
+
+# CLI Tools
+https://github.com/tj/commander.js
+https://github.com/yargs/yargs
+https://github.com/chalk/chalk
+https://github.com/sindresorhus/ora
+https://github.com/enquirer/enquirer
+
+# React Ecosystem
+https://github.com/facebook/react
+https://github.com/vercel/next.js
+https://github.com/remix-run/remix
+https://github.com/gatsbyjs/gatsby
+https://github.com/pmndrs/zustand
+
+# Vue Ecosystem
+https://github.com/vuejs/core
+https://github.com/nuxt/nuxt
+https://github.com/vuejs/pinia
+https://github.com/vueuse/vueuse
+https://github.com/quasarframework/quasar
+
+# API & GraphQL
+https://github.com/graphql/graphql-js
+https://github.com/apollographql/apollo-server
+https://github.com/parse-community/parse-server
+https://github.com/trpc/trpc
+https://github.com/fastify/fastify-swagger
+
+# Validation & Schemas
+https://github.com/ajv-validator/ajv
+https://github.com/hapijs/joi
+https://github.com/jquense/yup
+https://github.com/colinhacks/zod
+https://github.com/validatorjs/validator.js
+
+# Authentication & Security
+https://github.com/jaredhanson/passport
+https://github.com/auth0/node-jsonwebtoken
+https://github.com/kelektiv/node.bcrypt.js
+https://github.com/panva/jose
+https://github.com/hapijs/iron
+
+# File & Stream Processing
+https://github.com/Stuk/jszip
+https://github.com/SheetJS/sheetjs
+https://github.com/nodeca/pako
+https://github.com/paulmillr/chokidar
+https://github.com/jprichardson/node-fs-extra
+
+# Date & Time
+https://github.com/moment/moment
 https://github.com/date-fns/date-fns
-https://github.com/motdotla/dotenv
-https://github.com/apify/fingerprint-suite
-https://github.com/Automattic/mongoose
-https://github.com/node-cron/node-cron
-https://github.com/cscott/node-random-name
-https://github.com/salesforce/tough-cookie
-https://github.com/defunctzombie/node-url
+https://github.com/iamkun/dayjs
+https://github.com/moment/luxon
+https://github.com/js-joda/js-joda
+
+# Logging
+https://github.com/pinojs/pino
+https://github.com/winstonjs/winston
+https://github.com/debug-js/debug
+https://github.com/trentm/node-bunyan
+https://github.com/log4js-node/log4js-node
+
+# HTTP Servers & Middleware
+https://github.com/fastify/fastify
+https://github.com/koajs/koa
+https://github.com/pillarjs/cookies
+https://github.com/jshttp/cookie
+https://github.com/expressjs/cors
+
+# Template Engines
+https://github.com/janl/mustache.js
+https://github.com/pugjs/pug
+https://github.com/handlebars-lang/handlebars.js
+https://github.com/ejs/ejs
+https://github.com/marko-js/marko
+
+# Process Management
+https://github.com/Unitech/pm2
+https://github.com/nodemon/nodemon
+https://github.com/remy/nodemon
+https://github.com/foreversd/forever
+https://github.com/strongloop/node-foreman
+
+# Crypto & Hashing
+https://github.com/crypto-browserify/crypto-browserify
+https://github.com/indutny/hash.js
+https://github.com/digitalbazaar/forge
+https://github.com/brix/crypto-js
+https://github.com/dchest/tweetnacl-js
+
+# Parsers
+https://github.com/cheeriojs/cheerio
+https://github.com/fb55/htmlparser2
+https://github.com/markdown-it/markdown-it
+https://github.com/remarkjs/remark
+https://github.com/unified/unified
+
+# WebSockets & Real-time
+https://github.com/socketio/socket.io
+https://github.com/websockets/ws
+https://github.com/uNetworking/uWebSockets.js
+https://github.com/pusher/pusher-js
+https://github.com/primus/primus
+
+# Email
+https://github.com/nodemailer/nodemailer
+https://github.com/eleith/emailjs
+https://github.com/forwardemail/email-templates
+https://github.com/andris9/mailparser
+https://github.com/nodemailer/smtp-server
