@@ -1,6 +1,6 @@
 # Node.js Nightly Compatibility Report
 
-**Last Run:** 2026-09-28T07:54:11.512188 UTC
+**Last Run:** 2026-09-29T08:08:07.762654 UTC
 
 **Summary:** 95 / 95 testable libraries (100.00%) are compatible.
 
