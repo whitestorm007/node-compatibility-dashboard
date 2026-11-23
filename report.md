@@ -1,8 +1,8 @@
 # Node.js Nightly Compatibility Report
 
-**Last Run:** 2026-11-22T09:22:54.645737 UTC
+**Last Run:** 2026-11-23T09:47:44.841998 UTC
 
-**Summary:** 95 / 95 testable libraries (100.00%) are compatible.
+**Summary:** 93 / 93 testable libraries (100.00%) are compatible.
 
 ## 🚨 Regressions (0)
 Libraries that **passed** on Node.js Stable but **failed** on Nightly.
@@ -10,7 +10,7 @@ Libraries that **passed** on Node.js Stable but **failed** on Nightly.
 ## ⚠️ Already Broken (0)
 Libraries that **failed** on Node.js Stable. These failures are not related to Nightly.
 
-## ✅ Compatible (95)
+## ✅ Compatible (93)
 Libraries that passed on both Stable and Nightly.
 
 | Library | Status |
@@ -71,8 +71,6 @@ Libraries that passed on both Stable and Nightly.
 | jszip | ✅ Pass |
 | sheetjs | ✅ Pass |
 | pako | ✅ Pass |
-| chokidar | ✅ Pass |
-| node-fs-extra | ✅ Pass |
 | moment | ✅ Pass |
 | dayjs | ✅ Pass |
 | luxon | ✅ Pass |
@@ -111,13 +109,15 @@ Libraries that passed on both Stable and Nightly.
 | mailparser | ✅ Pass |
 | smtp-server | ✅ Pass |
 
-## 🤷 Untestable (10)
+## 🤷 Untestable (12)
 Libraries that do not have a `scripts.test` in `package.json`.
 
 | Library | Status |
 | --- | --- |
 | sequelize | 🤷 Untestable |
 | esbuild | 🤷 Untestable |
+| chokidar | 🤷 Untestable |
+| node-fs-extra | 🤷 Untestable |
 | date-fns | 🤷 Untestable |
 | js-joda | 🤷 Untestable |
 | ejs | 🤷 Untestable |
